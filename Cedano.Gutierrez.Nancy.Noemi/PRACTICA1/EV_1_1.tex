@@ -1,0 +1,73 @@
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{kpfonts}
+\usepackage{fourier}
+\author{Cedano Gutierrez Nancy Noemi}
+\title{file:///C:/Users/starn/OneDrive/Desktop/EV_1_1_circuitos_de_rectificacion_no_controlados}
+\begin{document}
+\begin{center}
+\textbf{REPORTE DE PRACTICA 1}\\
+CIRCUITOS DE RECTIFICACION NO CONTROLADOS
+\end{center}
+\begin{center}
+Cedano Gutierrez Nancy Noemi\\
+19-sep-2019\\
+Universidad Politecnica de La Zona Metropolitana de Guadalajara
+\end{center}
+\begin{document}
+\textbf{Rectificador de media onda con carga inductiva}
+•Un rectificador es un circuito que convierte la corriente alterna en corriente continua, utilizando diodos rectificadores.
+Un rectificador de media onda esta construido con un diodo para mantener el flujo de corriente en una sola dirección, que puede ser útil para hacer la conversión de CA-CC. Cuando la tensión de entrada es positiva, el diodo se polariza en directo y si la entrada es negativa el diodo se polariza en inverso. (Cuando se somete el diodo a una diferencia de tensión externa, se dice que el diodo está polarizando, pudiendo ser la polarización directa o inversa).
+Por tanto, cuando el diodo se polariza en directo, la tensión de salida a través de la carga se puede hallar por medio de la relación de un divisor de tensión. Cuando la polarización es inversa, la corriente es 0, de manera que la tensión de salida también es 0. 
+La tensión del generador es igual a la tensión que cae en la resistencia más la tensión que cae en la bobina.
+Este tipo de rectificador no es muy frecuente de utilizar en las industrias, pero nos ayudara a estudiar conceptos fundamentales de la rectificación no controlada. Para comprender mejor la rectificación de media onda con carga inductiva, utilizaremos el programa OrCAD que nos permite simular el circuito de la siguiente figura:
+Este es un circuito de un rectificador de carga inductiva, contiene los siguientes componentes:
+Fuente de tensión (Vsin) con los siguientes parámetros:
+•	VOFF=0
+•	VAMPL= 311 
+•	FREQ =50
+•	AC= 0
+Un diodo rectificador 
+Una bobina: Lcarga = 10Mh
+Una resistencia de 10Ω
+Una vez creado el circuito en OrCAD efectuaremos su simulación, y de esta manera obtenemos 
+Observamos que la tensión de salida no se anula hasta que la corriente de carga lo hace de esta manera sabemos que el diodo permanece polarizado en directo. 
+Si sustituimos la resistencia por una fuente de tensión continua de valor de 150v obtenemos esta salida
+\textbf{Rectificador monofasico en puente}
+Este circuito a diferencia del otro se compone por 4 diodos, este circuito rectificador busca de la corriente alterna, que la onda positiva y la onda negativa esten separadas para rectificarla a corriente continua. Este proceso produce un efecto llamado rizado que es una ondulación traducida en variación de voltaje, para corregir este rizado se utiliza un condensador eléctrico destinado a atenuar la tensión de salida.
+Usando el programa OrCAD simularemos este efecto con el siguiente circuito
+Componentes 
+R6= 10mΩ
+L7= 1mH
+C4= 1mF
+R7= 10Ω
+De esta manera se ve el efecto rizado que genera el rectificador monofásico en puente.
+Cuando se produce la onda positiva, el diodo D16 será conductor; mientras que cuando se produce la semionda negativa es el D17 el que se vuelve conductor. en ambos casos la corriente por la carga va en el mismo sentido, al igual que ocurriría con el rectificador anterior.
+\textbf{ Rectificador monofásico duplicador de tensión} 
+Este rectificador tiene una salida de tensión del doble de lo que se obtiene del circuito anterior. De esta manera podemos obtener tensiones mas elevadas en continuidad sin necesidad de usar un transformador que eleve la tensión de entrada del rectificador.
+Esto es posible con tan solo un par de diodos y dos capacitores.
+Para esta practica utilizaremos de igual manera el simulador OrCAD 
+Componentes:
+Fuente Vsin
+2 diodos 
+2 capacitores
+1 resistencia
+1 bobina 
+El circuito a realizar es el siguiente:
+Cuando trabajamos con ambas tensiones, los diodos se polarizan, el diodo 10 con el positivo y el diodo 11 con el negativo, la señal de salida duplica el voltaje debido a la carga y descarga de los capacitores ya que en cualquiera de los dos ciclos los capacitores se cargan
+
+\textbf{EFECTOS DE LOS RECTIFICADORES MONOFASICOS EN LINEAS TRIFASICAS }
+Este circuito rectificador es un conjunto de 3 rectificadores monofásicos de igual potencia conectados entre cada una de las fases y el neutro de la instalación, pueden manejar grandes potencias, ya que en su salida de tensión presentan menor rizado de la señal. Se utilizan principalmente en la industria para producir voltajes y corriente continua que impulsan grandes cargas de potencia.
+En esta rectificador como dice al inicio, usaremos 3 rectificadores monofásicos y se presentara de la siguiente manera:
+La corriente que circula por el neutro no es nula debido a que los receptores monofasicos no estan alineados y estan de manera equilibrada (esto ocurre de igual manera con las magnitudes senoidales).
+Rectificadores trifasicos 
+Este rectificador esta formado por un conmutador con catodos comunes o del tipo “mas positivo” de forma que la salida se obtiene el voltaje mayor en cada instante. Por tanto si la red trifasica la consideramos como tres tensiones senoidales de valor eficaz y frrecuencia iguales pero desfazadas 120° (2π/3), entonces cada diodo conducira un tercio de t.
+
+
+\end{document}
